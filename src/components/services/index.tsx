@@ -18,6 +18,7 @@ export function Services({object}: HomeProps) {
                 quality={100}
                 fill={true}
                 src={object.metadata.about.banner.url}
+                sizes="(max-width: 480px) 100vw, (max-width: 1024) 75vw, 50vw"
             />
             </div>
         </section>
@@ -35,6 +36,7 @@ export function Services({object}: HomeProps) {
                   quality={100}
                   fill={true}
                   src={service.image.url}
+                  sizes="(max-width: 480px) 100vw, (max-width: 1024) 75vw, 50vw"
                 />
               </div>
               <p>{service.description}</p>
