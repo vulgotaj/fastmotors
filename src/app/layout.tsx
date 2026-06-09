@@ -16,6 +16,21 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "FastMotors - Oficina Especializada",
   description: "Oficina de carros no Rio de Janeiro",
+  keywords: ["oficina", "oficina carros", "carros", "manutenção de carros"],
+  openGraph: {
+    title: "FastMotors - Oficina Especializada",
+    images: [`${process.env.NEXT_PUBLIC_URL}/metadata.jpg`]
+  },
+  robots:{
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot:{
+      index: true,
+      follow: true,
+      noimageindex: true
+    }
+  }
 };
 
 export default function RootLayout({
